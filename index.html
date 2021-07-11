@@ -7,11 +7,105 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <header>
+    <ul class="nav justify-content-between align-items-center header-menu">
+      <li class="nav-item exit-btn">
+        <i class="far fa-angle-left exit-icon"></i>
+      </li>
+      <li class="nav-item align-self-center">
+        <a class="nav-link header__logo-wrapper" href="#">
+          <img class="header__logo" src="https://habrastorage.org/storage1/840360e9/6b232d9d/3d9e73de/3aad7d36.png"
+            alt="logo">
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <div id="top_balance">HELLO</div>
+        <div id="top_balance_value">WORLD</div>
+      </li>
+    </ul>
+  </header>
+  <div class="row main">
+    <div class="col-md-10 main__content">
+      <div class="main__top d-flex justify-content-center">
+        <div class="row justify-content-between align-items-center main__top-content">
+          <div class="team-img">
+            <img class="main__top-img" src="https://www.meme-arsenal.com/memes/36e497fe587e57c31d2f9c7797def0d2.jpg"
+              alt="img">
+          </div>
+          <div id="info_team_a" class="col">
+            <span>Hello word 1</span>
+            <span>Hello word 2</span>
+          </div>
+          <div class="col main__top-score">
+            <div id="info_score">999</div>
+            <div id="info_timing">Hello word</div>
+          </div>
+          <div id="info_team_b" class="col">
+            <span>Hello word 1</span>
+            <span>Hello word 2</span>
+          </div>
+          <div class="team-img">
+            <img class="main__top-img" src="https://www.meme-arsenal.com/memes/36e497fe587e57c31d2f9c7797def0d2.jpg"
+              alt="img">
+          </div>
+        </div>
+      </div>
+      <div class="chart-container">
+        <canvas id="chart_main" width="1180px" height="530px"></canvas>
+      </div>
+      <div class="canvas-wrapper d-flex justify-content-center" data-da="#tab1, 768, 1">
+        <canvas id="canvas_field" width="466px" height="332px"></canvas>
+      </div>
+    </div>
+    <div class="col-md-2 main__aside">
+      <div class="main__aside-content1">
+        <div class="dropdown main__aside-dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            123
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <button type="button" class="btn d-flex align-items-center justify-content-center btn-success main__aside-btn" id="button_up"><i
+            class="fas fa-check"></i><span>text</span></button>
+        <button type="button" class="btn d-flex align-items-center justify-content-center btn-danger main__aside-btn" id="button_down"><i
+            class="fas fa-check"></i><span>text</span></button>
+      </div>
+      <div class="main__aside-content2">
+        <ul class="nav nav-tabs main__aside-tabs" id="myTab" role="tablist">
+          <li class="nav-item text-center tab-item">
+            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
+              aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item text-center tab-item">
+            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tba2"
+              aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item text-center tab-item tab-item-3">
+            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+        <div class="tab-content aside__tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab"></div>
+          <div class="tab-pane fade profile" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...</div>
+          <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -48,7 +142,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/dynamicAdapt.js"></script>
 </body>
 
 </html>
