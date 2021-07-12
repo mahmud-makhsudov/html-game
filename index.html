@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Document</title>
@@ -34,7 +34,7 @@
     </ul>
   </header>
   <div class="row main">
-    <div class="col-md-10 main__content">
+    <div class="col-lg-10 col-md-12 main__content">
       <div class="main__top d-flex justify-content-center">
         <div class="row justify-content-between align-items-center main__top-content">
           <div class="team-img">
@@ -62,11 +62,11 @@
       <div class="chart-container">
         <canvas id="chart_main" width="1180px" height="530px"></canvas>
       </div>
-      <div class="canvas-wrapper d-flex justify-content-center" data-da="#tab1, 768, 1">
+      <div class="canvas-wrapper d-flex justify-content-center" data-da="#tab1, 991, 1">
         <canvas id="canvas_field" width="466px" height="332px"></canvas>
       </div>
     </div>
-    <div class="col-md-2 main__aside">
+    <div class="col-lg-2 col-md-12 main__aside">
       <div class="main__aside-content1">
         <div class="dropdown main__aside-dropdown" id="dropdown_bet">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -88,20 +88,20 @@
         <ul class="nav nav-tabs main__aside-tabs" id="myTab" role="tablist">
           <li class="nav-item text-center tab-item">
             <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
-              aria-selected="true">Home</a>
+              aria-selected="true">Tab 1</a>
           </li>
           <li class="nav-item text-center tab-item">
             <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tba2"
-              aria-selected="false">Profile</a>
+              aria-selected="false">Tab 2</a>
           </li>
           <li class="nav-item text-center tab-item tab-item-3">
-            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Contact</a>
+            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</a>
           </li>
         </ul>
         <div class="tab-content aside__tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab"></div>
           <div class="tab-pane fade profile" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-            <ul class="list-group">
+            <ul class="list-group main__list">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
               <li class="list-group-item">Morbi leo risus</li>
@@ -110,7 +110,7 @@
             </ul>
           </div>
           <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-            <ul class="list-group">
+            <ul class="list-group main__list">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
               <li class="list-group-item">Morbi leo risus</li>
