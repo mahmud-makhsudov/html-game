@@ -294,7 +294,8 @@ body {
     font-size: 10px;
   }
 }
-@media (width: 1024px) {
+
+/* @media (width: 1024px) {
   .main {
     padding-bottom: 825px;
   }
@@ -308,7 +309,7 @@ body {
   .main {
     padding-bottom: 255px;
   }
-}
+} */
 
 @media (max-width: 640px) and (orientation: landscape) {
   .main {
