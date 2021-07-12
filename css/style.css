@@ -69,7 +69,7 @@ body {
   padding: 0;
 }
 .main {
-  padding: 13px 10px 25px;
+  padding: 13px 10px 0;
 }
 .main__top {
   width: 100%;
