@@ -175,7 +175,10 @@ body {
   background: #c4c4c4;
   padding: 10px;
   max-height: 585px;
+}
+.list-wrapper{
   overflow-y: scroll;
+  max-height: 565px;
 }
 .tab-item-3 {
   display: none !important;
@@ -183,6 +186,9 @@ body {
 @media (max-width: 991px) {
   .aside__tab-content {
     max-height: 355px;
+  }
+  .list-wrapper{
+    max-height: 335px;
   }
   .canvas-wrapper {
     margin-top: 0;
@@ -272,6 +278,9 @@ body {
   .aside__tab-content {
     max-height: 207px;
   }
+  .list-wrapper{
+    max-height: 187px;
+  }
   #canvas_field {
     width: 262px;
     height: 184px;
@@ -326,6 +335,9 @@ body {
 @media (max-width: 812px) and (orientation: landscape) {
   .aside__tab-content {
     max-height: 125px;
+  }
+  .list-wrapper{
+    max-height: 105px;
   }
   .main {
     display: flex;
