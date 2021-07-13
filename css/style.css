@@ -174,12 +174,16 @@ body {
 .aside__tab-content {
   background: #c4c4c4;
   padding: 10px;
-  min-height: 200px;
+  max-height: 585px;
+  overflow-y: scroll;
 }
 .tab-item-3 {
   display: none !important;
 }
 @media (max-width: 991px) {
+  .aside__tab-content {
+    max-height: 355px;
+  }
   .canvas-wrapper {
     margin-top: 0;
   }
@@ -265,6 +269,9 @@ body {
   padding: 10px 15px;
 }
 @media (max-width: 515px) {
+  .aside__tab-content {
+    max-height: 207px;
+  }
   #canvas_field {
     width: 262px;
     height: 184px;
@@ -317,6 +324,9 @@ body {
 } */
 
 @media (max-width: 812px) and (orientation: landscape) {
+  .aside__tab-content {
+    max-height: 125px;
+  }
   .main {
     display: flex;
     flex-wrap: nowrap;
@@ -327,7 +337,7 @@ body {
     flex-basis: 100%;
     margin: 10px 0 0;
   }
-  .main__aside-dropdown .dropdown-item{
+  .main__aside-dropdown .dropdown-item {
     padding: 5px 10px;
   }
   .main__aside-btn {
